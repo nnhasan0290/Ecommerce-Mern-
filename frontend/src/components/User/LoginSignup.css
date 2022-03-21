@@ -1,0 +1,135 @@
+.loginSignup_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(231, 231, 231);
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+.login-box {
+  width: 25%;
+  height: 70%;
+  padding: 5px;
+  background-color: #fff;
+  overflow: hidden;
+  min-width: 240px;
+  min-height: 300px;
+}
+
+.login-register {
+  display: flex;
+  justify-content: space-around;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.login-box > button {
+  width: 50%;
+  background-color: tomato;
+  border: none;
+  transition: all 0.5s;
+}
+
+form.login-form,
+.register-form {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+  padding: 2vmax;
+  transition: all 0.5s;
+}
+
+.name-input {
+  display: flex;
+  border: 1px solid;
+  padding: 5px;
+  box-sizing: border-box;
+  align-items: center;
+  width: 100%;
+}
+
+.name-input > input {
+  border: none;
+}
+
+.email-input {
+  display: flex;
+  border: 1px solid;
+  padding: 4px;
+  margin-top: 17px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.email-input > input {
+  border: none;
+}
+
+.login-form > a {
+  text-decoration: none;
+  margin: 15px;
+}
+
+.login-register > p {
+  padding: 7px;
+}
+input:focus {
+  outline: none;
+}
+input[type="submit"] {
+  width: 100%;
+  padding: 9px;
+  background: tomato;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+button.shiftToRegister {
+  transform: translateX(100%);
+}
+form.register-form {
+  transform: translateY(-100%) translateX(-110%);
+}
+.go-left {
+  transform: translateX(-100%);
+}
+form.come-right {
+  transform: translateX(0%) translateY(-100%);
+}
+.register-form > div {
+  display: flex;
+  width: 90%;
+  border: 1px solid;
+  padding: 5px;
+  margin: 5px;
+}
+
+.register-form > div > input {
+  border: none;
+}
+.registerImage > img {
+  max-width: 36px;
+  border-radius: 50%;
+  min-height: 46px;
+}
+
+.registerImage {
+  display: flex;
+  align-items: center;
+}
+.registerImage > input::file-selector-button {
+  cursor: pointer;
+  width: 100%;
+  height: 5vh;
+  border: none;
+  margin: 0%;
+  padding: 0 1vmax;
+  background-color: #fff;
+}

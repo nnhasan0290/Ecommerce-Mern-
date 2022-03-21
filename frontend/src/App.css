@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  font-family: "Roboto";
+  scroll-behavior: smooth;
+}
+img.speedDialIcon {
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+}

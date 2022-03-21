@@ -1,0 +1,18 @@
+.loading {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+.loading > div {
+  height: 10vmax;
+  width: 10vmax;
+  border-bottom: 1px solid;
+  border-radius: 50%;
+  animation: myLoading 0.8s linear infinite;
+}
+@keyframes myLoading {
+  to {
+    transform: rotate(-360deg);
+  }
+}

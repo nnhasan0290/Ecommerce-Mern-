@@ -1,0 +1,104 @@
+.single-product-container {
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: 2vmax;
+  text-transform: capitalize;
+}
+.img-area {
+  text-align: center;
+  border: 1px solid #ddd;
+  flex: 1;
+}
+
+.content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  padding: 2em;
+  text-align: center;
+}
+
+img.CarouselImage {
+  max-width: 100%;
+}
+
+.heading-block > p {
+  font-size: 0.8em;
+}
+
+.content-area {
+  font-size: 20px;
+}
+
+.heading-block > h3 {
+  margin-bottom: 0.5em;
+}
+
+.block-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-2 > span:last-child {
+  font-size: 0.8em;
+}
+
+.block-3 {
+  display: grid;
+  grid-gap: 1em;
+}
+
+button.ad-to-cart {
+  background-color: tomato;
+  padding: 1em;
+  border-radius: 1em;
+  font-weight: 800;
+  margin-left: 1em;
+  border: none;
+  cursor: pointer;
+}
+
+p.description {
+  font-size: 0.7em;
+  margin-bottom: 0.5em;
+}
+
+.reviews-container {
+  display: flex;
+  overflow: auto;
+  margin: 2vmax;
+  border: 1px solid #dddd;
+}
+
+.reviewCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+  padding: 1vmax;
+  width: 25%;
+}
+
+.reviewCard > img {
+  width: 10vmax;
+}
+
+.reviewCard > p {
+  margin: 0.8em;
+}
+
+.reviewCard > span:last-child {
+  margin: 0.8em 0;
+}
+@media screen and (max-width: 900px) {
+  .single-product-container {
+    flex-direction: column;
+  }
+}
