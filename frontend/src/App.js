@@ -10,7 +10,6 @@ import Account from "./components/User/Account";
 import { loadUser } from "./redux/actions/userAction";
 import MetaData from "./components/layout/MetaData";
 
-import webfont from "webfontloader";
 import { useEffect } from "react";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
 import Search from "./components/ProductDetails/Search/Search";
@@ -20,13 +19,8 @@ function App() {
   const dispatch = useDispatch();
   const { isAuthenticated, user } = useSelector((state) => state.user);
   useEffect(() => {
-    webfont.load({
-      google: {
-        families: ["Roboto", "Droid Sans", "Chilanka"],
-      },
-    });
     dispatch(loadUser());
-  }, []);
+  }, [dispatch]);
   return (
     <BrowserRouter>
       <MetaData title={`Ecommerce`} />
